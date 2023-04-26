@@ -1,0 +1,16 @@
+spin_manifest_version = "1"
+authors = ["YOUR_GITHUB_USERNAME <YOUR_GITHUB_EMAIL>"]
+description = ""
+name = "serverless-apis"
+trigger = { type = "http", base = "/" }
+version = "0.1.0"
+
+[[component]]
+id = "serverless-apis"
+source = "target/wasm32-wasi/release/serverless_apis.wasm"
+allowed_http_hosts = []
+[component.trigger]
+route = "/..."
+[component.build]
+command = "cargo build --target wasm32-wasi --release"
+watch = ["src/**/*.rs", "Cargo.toml"]
