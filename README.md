@@ -7,6 +7,6 @@ Quickly retrieves a stored image.
 
 ```
 |    Datastore    |        | Serverless Image API |         |      Img url can be used for      |
-|                 |   ->   |                      |.  ->.   |    prod use. Loads super fast.    |
+|                 |   ->   |                      |   ->    |    prod use. Loads super fast.    |
 |  Aerospike  DB  |        |    Rust on Fermyon   |         | Example in HTML, yew, react, etc. |
 ```
